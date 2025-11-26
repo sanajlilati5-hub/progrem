@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/CategoriesSection.dart';
 import 'package:flutter_application_1/FooterSection.dart';
 import 'package:flutter_application_1/HeroSection.dart';
+import 'package:flutter_application_1/search.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -14,9 +15,11 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            SizedBox(height: 60),
+            SizedBox(height: 30),
+            Search(),
+            SizedBox(height: 20),
             HeroSection(),
-            SizedBox(height: 40),
+            SizedBox(height: 20),
             CategoriesSection(),
             SizedBox(height: 40),
             FooterSection(),
